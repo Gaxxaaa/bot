@@ -302,7 +302,7 @@ async def ve(ctx, target: str = None):
         await ctx.send("Utilisateur introuvable (mention ou réponse).")
         return
 
-    role = ctx.guild.get_role(1503489020725039195)
+    role = ctx.guild.get_role(1503759440933949461)
     if role is None:
         await ctx.send("Le rôle est introuvable sur ce serveur.")
         return
