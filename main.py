@@ -396,4 +396,6 @@ async def on_command_error(ctx, error):
     elif isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("❌ Argument manquant. Vérifie la syntaxe de la commande.")
 
-bot.run("MTUwMzQ5MTkxMjE2OTE2NDkwMQ.GzTTSh.tDH-yapcC3v__IuWjmhsAx0XinsnXZ1VxDomck")
+import os
+
+bot.run(os.getenv("TOKEN"))
